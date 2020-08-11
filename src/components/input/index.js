@@ -1,6 +1,7 @@
 import React, {Component, InputHTMLAttributes} from 'react';
 import PropTypes from 'prop-types';
 
+import './styles.css';
 
 class Input extends Component {
     render() {

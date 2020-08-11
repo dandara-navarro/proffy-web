@@ -2,6 +2,7 @@ import React from 'react';
 
 import PageHeader from '../../components/PageHeader';
 import TeacherItem from '../../components/TeacherItem';
+import Input from '../../components/Input';
 import './styles.css';
 
 function TeacherList() {
@@ -9,18 +10,9 @@ function TeacherList() {
        <div id="page-teacher-list" className="container">
            <PageHeader title="These are all the available teachers.">
                <form id="search-teachers">
-                   <div className="input-block">
-                        <label htmlFor="subject">Course</label>
-                        <input type="text" id="subject" />
-                   </div>
-                   <div className="input-block">
-                        <label htmlFor="week-day">Week day</label>
-                        <input type="text" id="week-day" />
-                   </div>
-                   <div className="input-block">
-                        <label htmlFor="time">Time</label>
-                        <input type="text" id="time" />
-                   </div>
+                   <Input name="subject" label="Subject" />
+                   <Input name="week_day" label="Week Day" />
+                   <Input name="time" type="time" label="Time" />
                </form>
            </PageHeader>
        
